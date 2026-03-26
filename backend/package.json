@@ -2,9 +2,9 @@
   "name": "pg-hostel-backend",
   "version": "1.0.0",
   "scripts": {
-    "build": "nest build",
-    "start": "node dist/main",
-    "start:dev": "nest start --watch",
+    "build": "npx nest build",
+    "start": "node dist/main.js",
+    "start:dev": "npx nest start --watch",
     "prisma:migrate": "prisma migrate dev",
     "prisma:seed": "ts-node prisma/seed.ts",
     "prisma:studio": "prisma studio"
@@ -19,7 +19,7 @@
     "@nestjs/platform-express": "^10.0.0",
     "@prisma/client": "^5.0.0",
     "axios": "^1.13.6",
-    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
     "multer": "^2.1.1",
@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",
-    "@types/bcrypt": "^5.0.0",
+    "@types/bcryptjs": "^2.4.6",
     "@types/multer": "^1.4.7",
     "@types/node": "^20.0.0",
     "@types/passport-jwt": "^3.0.9",
